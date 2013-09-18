@@ -43,7 +43,7 @@ package
 			Score1 = Score1*100/Missies1;
 			Text.text += "\nMisseis Usados: " + Missies1;
 			Text.text += "\nCidades Destruidas: " + (6 - cidades1);
-			Score1 = Score1 * (7 - cidades1);
+			Score1 = Score1 - 100 * (7 - cidades1);
 			Text.text += "\n\nScore: " + Score1 * 10;
 			Text.size = 15;
 			add(Text);
