@@ -20,6 +20,7 @@ package
 		private var HUD:FlxText = new FlxText(0, 0, 400);
 		private var numMisseis:int;
 		private var numCidades:int = 6;
+		private var numNaves:int = 0;
 		private var tempo:Number = 59;
 		private var naves:FlxGroup;
 		private var func:Boolean = true;
@@ -95,6 +96,7 @@ package
 			}
 			if (FlxG.overlap(naves, missil, Destroy))
 			{
+				numNaves++;
 				FlxG.score++;
 			}
 			if (FlxG.overlap(naves, canhao))

@@ -15,7 +15,7 @@ package
 
 		public function Main():void 
 		{
-			super(400, 300,  MenuState, 2, 60, 60);
+			super(400, 300,  nivel1State, 2, 60, 60);
 			forceDebugger = true;
 		}
 	}
